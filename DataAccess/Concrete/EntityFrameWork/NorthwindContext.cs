@@ -18,5 +18,6 @@ namespace DataAccess.Concrete.EntityFrameWork
         public DbSet<Product> Products { get; set; }//tabloları yani veritabanını yazılmış olan classlarla eşle
         public DbSet<Category> Categories { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }

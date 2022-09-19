@@ -15,12 +15,12 @@ namespace Business.Concrete
 {
     public class ProductManager : IProductService
     {
-        IProductDal _productDal;
+        IProductDal _productDal;//constructor injection
 
         public ProductManager(IProductDal productDal)
         {
             _productDal = productDal;
-        }
+        }//end injection
 
         public IResult Add(Product product)
         {
@@ -36,7 +36,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Product>> GetAll()
         {
-            if (DateTime.Now.Hour==22)
+            if (DateTime.Now.Hour==1)
             {
                 return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
             }

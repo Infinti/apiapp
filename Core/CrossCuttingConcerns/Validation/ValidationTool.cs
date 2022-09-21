@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.CrossCuttingConcerns.Validation
+namespace Core.CrossCuttingConcerns.Validation//bunlar validation, cache, log, transaction, authorization
 {
     public static class ValidationTool
     {
